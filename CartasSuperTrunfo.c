@@ -2,31 +2,27 @@
 #include <string.h>
 
 int main () {
-    printf("Insira os dados de suas cartas: \n");
 
-    //Definição das variáveis
     char estado[5];
-    char codigo[5];
+    char codcarta[5];
     char nome[25];
     int populacao;
     float area;
     float pib;
-    int turisticos;
+    int numponturi;
 
-    //Coleta de dados inseridos pelo usuário
     printf("Carta 1 \n");
 
     printf("Estado: ");
     scanf("%s", estado);
 
     printf("Código da carta: ");
-    scanf("%s", codigo);
+    scanf("%s", codcarta);
 
     printf("Nome da cidade: ");
     getchar();
     fgets(nome, sizeof(nome), stdin);
     nome[strcspn(nome, "\n")] = 0;
-    //Para entender melhor o funcionamento do fgets tive que pesquisar na internet
 
     printf("População: ");
     scanf("%d", &populacao);
@@ -38,24 +34,30 @@ int main () {
     scanf("%f", &pib);
 
     printf("Número de pontos turísticos: ");
-    scanf("%d", &turisticos);
+    scanf("%d", &numponturi);
 
     printf("Carta 1 \n");
     printf("Estado: %s \n", estado);
-    printf("Código da carta: %s \n", codigo);
+    printf("Código da carta: %s \n", codcarta);
     printf("Nome da cidade: %s \n", nome);
     printf("População: %d \n", populacao);
     printf("Área: %.2f Km² \n", area);
     printf("PIB: %.2f bilhões de reais \n", pib);
-    printf("Número de pontos turísticos: %d \n", turisticos);
+    printf("Número de pontos turísticos: %d \n", numponturi);
 
+    float pibpercap1 = pib / populacao;
+    float densidade1 = populacao / area;
+
+    printf("PIB per capta: %.2f \n", pibpercap1);
+    printf("Densidade populacional(Km²): %.2f \n", densidade1);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     char estado2[5];
-    char codigo2[5];
+    char codcarta2[5];
     char nome2[25];
     int populacao2;
     float area2;
     float pib2;
-    int turisticos2;
+    int numponturi2;
 
     printf("Carta 2 \n");
 
@@ -63,7 +65,7 @@ int main () {
     scanf("%s", estado2);
 
     printf("Código da carta: ");
-    scanf("%s", codigo2);
+    scanf("%s", codcarta2);
 
     printf("Nome da cidade: ");
     getchar();
@@ -80,16 +82,22 @@ int main () {
     scanf("%f", &pib2);
 
     printf("Número de pontos turísticos: ");
-    scanf("%d", &turisticos2);
+    scanf("%d", &numponturi2);
 
     printf("Carta 2 \n");
     printf("Estado: %s \n", estado2);
-    printf("Código da carta: %s \n", codigo2);
+    printf("Código da carta: %s \n", codcarta2);
     printf("Nome da cidade: %s \n", nome2);
     printf("População: %d \n", populacao2);
     printf("Área: %.2f Km² \n", area2);
     printf("PIB: %.2f bilhões de reais \n", pib2);
-    printf("Número de pontos turísticos: %d \n", turisticos2);
+    printf("Número de pontos turísticos: %d \n", numponturi2);
+
+    float pibpercap2 = pib2 / populacao2;
+    float densidade2 = populacao2 / area2;
+
+    printf("PIB per capta: %.2f \n", pibpercap2);
+    printf("Densidade populacional(Km²): %.2f \n", densidade2);
 
     return 0;
 }
