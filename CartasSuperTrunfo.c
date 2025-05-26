@@ -11,6 +11,7 @@ int main () {
     float pib;
     int numponturi;
 
+    //Inserção de dados da Carta 1
     printf("Carta 1 \n");
 
     printf("Estado: ");
@@ -51,7 +52,7 @@ int main () {
     printf("PIB per capta: %.2f reais \n", pibpercap1);
     printf("Densidade populacional(Km²): %.2f Hab/Km² \n", densidade1);
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Inserção de dados da Carta 2
     
     char estado2[5];
     char codcarta2[5];
