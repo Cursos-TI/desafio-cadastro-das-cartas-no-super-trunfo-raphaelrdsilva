@@ -3,6 +3,7 @@
 
 int main () {
 
+//INSERÇÃO DE DADOS PRIMEIRA CARTA
     char estado[5];
     char codcarta[5];
     char nome[25];
@@ -52,9 +53,8 @@ int main () {
     printf("PIB per capta: %.2f \n", pibpercap1);
     printf("Densidade populacional(Km²): %.2f \n", densidade1);
     printf("Super Poder: %.2f \n", superpoder1);
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-   
+    
+//INSERÇÃO DE DADOS SEGUNDA CARTA 
     char estado2[5];
     char codcarta2[5];
     char nome2[25];
