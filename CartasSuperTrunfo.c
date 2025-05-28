@@ -3,7 +3,6 @@
 
 int main () {
 
-    //Definição das variáveis
     char estado[5];
     char codcarta[5];
     char nome[25];
@@ -44,12 +43,22 @@ int main () {
     printf("População: %lu \n", populacao);
     printf("Área: %.2f Km² \n", area);
     printf("PIB: %.2f bilhões de reais \n", pib);
-    printf("Número de pontos turísticos: %d \n", turisticos);
+    printf("Número de pontos turísticos: %d \n", numponturi);
 
+    float pibpercap1 = pib / populacao;
+    float densidade1 = populacao / area;
+    float superpoder1 = populacao + area + pib + pibpercap1 + densidade1 + numponturi;
+
+    printf("PIB per capta: %.2f \n", pibpercap1);
+    printf("Densidade populacional(Km²): %.2f \n", densidade1);
+    printf("Super Poder: %.2f \n", superpoder1);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   
     char estado2[5];
     char codcarta2[5];
     char nome2[25];
-    unsigned long int populacao2;
+    int populacao2;
     float area2;
     float pib2;
     int numponturi2;
@@ -86,7 +95,34 @@ int main () {
     printf("População: %d \n", populacao2);
     printf("Área: %.2f Km² \n", area2);
     printf("PIB: %.2f bilhões de reais \n", pib2);
-    printf("Número de pontos turísticos: %d \n", turisticos2);
+    printf("Número de pontos turísticos: %d \n", numponturi2);
+
+    float pibpercap2 = pib2 / populacao2;
+    float densidade2 = populacao2 / area2;
+    float superpoder2 = populacao2 + area2 + pib2 + pibpercap2 + densidade2 + numponturi2;
+
+    printf("Super Poder: %.2f \n", superpoder2);
+    printf("PIB per capta: %.2f \n", pibpercap2);
+    printf("Densidade populacional(Km²): %.2f \n", densidade2);
+
+    //COMPARAÇÃO DE CARTAS
+    int compPopulacao = populacao > populacao2;
+    int compArea = area > area2;
+    int compPIB = pib > pib2;
+    int compPonturi = numponturi > numponturi2;
+    int compDensidade = densidade1 > densidade2;
+    int compPIBpercapta = pibpercap1 > pibpercap2;
+    int compSuperPoder = superpoder1 > superpoder2;
+
+    printf("Comparação de Cartas \n");
+    printf("População: CARTA 1 VENCEU? %d \n", compPopulacao);
+    printf("Área: CARTA 1 VENCEU? %d \n", compArea);
+    printf("PIB: CARTA 1 VENCEU? %d \n", compPIB);
+    printf("Pontos Turísticos: CARTA 1 VENCEU? %d \n", compPonturi);
+    printf("Densidade Populacional: CARTA 1 VENCEU? %d \n", compDensidade);
+    printf("PIB per Capta: CARTA 1 VENCEU? %d \n", compPIBpercapta);
+    printf("Super Poder: CARTA 1 VENCEU? %d \n", compSuperPoder);
 
     return 0;
 }
+
