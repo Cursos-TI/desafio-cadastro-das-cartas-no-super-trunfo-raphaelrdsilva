@@ -105,7 +105,7 @@ int main () {
     printf("PIB per capta: %.2f \n", pibpercap2);
     printf("Densidade populacional(Km²): %.2f \n", densidade2);
 
-    //COMPARAÇÃO DE CARTAS
+///////////////////////////////////////////////////////////////////COMPARAÇÃO DE CARTAS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     printf("COMPARAÇÃO DE CARTAS\n");
 
     if (populacao > populacao2) {
